@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: black;
+}
+
+
+#videoBox {
+
+}
+
+
+
+
+
+
+
+
+.headon {
+    width: 22%;
+    position: absolute;
+    left: 39%;
+    top: 350px;
+
+
+
+}
+
+.video-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+#video1 {
+  grid-area: 1/1/2/2;
+  width: 100%;
+}
+
+#video2 {
+  grid-area: 1/2/2/3;
+  width: 100%;
+}
+
+/*----overlay right------*/
+
+
+.overlay {
+  height: 56%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+color: white;
+z-index: 3;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+z-index: 2;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+    z-index: 100;
+}
+
+
+
+
+.arrow-right {
+    width: 3%;
+    position: absolute;
+    top: 250px;
+    z-index: 1;
+}
+
+.arrow-left {
+    width: 3%;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+    position: absolute;
+    top: 250px;
+    right: 10px;
+    z-index: 99;
+}
+
+.arrow-down {
+    width: 3%;
+    transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+    z-index: 99;
+}
+
+#se-mere {
+    color: white;
+    font-size: 20px
+}
+/*----overlay right------*/
+
+
+
+/*----overlay left------*/
+
+
+
+.overlay1 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+color: white;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+    z-index: 100;
+}
+
+/*----overlay left------*/
+
+
+.torben-section {
+
+width: 100%;
+
+}
+
+.torben {
+    width: 10%;
+}
+
+.torben-citat {
+    width: 10%
+}
+
+
+p, h2 {
+    color: white;
+    text-align: center;
+    padding: 10px
+}
+
+hr {
+    margin: 10px;
+}
+
+
+
+
+#spil {
+width: 5%;
+position: absolute;
+left: 10px;
+
+
+
+}
+
+#mute {
+width: 5%;
+position: absolute;
+left: 3px;
+top: 50px;
+
+
+}
+
+
+#spil:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#mute:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+.oliver-om {
+    background-image: url(../images/oli-feels.png);
+    opacity: 85%;
+    height: 60%
+
+}
+
+.oli-tekst {
+    width: 100%;
+    padding: 90px;
+}
+
+.oli {
+    background-image: url(../images/baggrund-oli.png);
+    z-index: 10;
+    height: 80%;
+    opacity: 70%;
+
+        display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 100 50 400;
+
+}
+
+.oliver-foto-tekst {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+.oliver-foto {
+    width: 65%;
+    margin: 20%
+}
+
+
+#oliver-video {
+    width: 50%;
+    margin: 25%;
+}
+
+#video-oliver {
+    width: 100%;
+    border-radius: 10%
+}
+
+
+
+.silas-om {
+    background-image: url(../images/silas-feels.png);
+    height: 60%;
+
+}
+
+.silas-foto{
+width: 70%;
+margin: 20%
+}
+
+.silas-tekst {
+    width: 30%;
+    margin-left: 35%;
+    padding-top: 50px;
+}
+
+/*----footer------*/
+
+
+footer {
+    background: black;
+    margin: 0;
+    padding: 40px;
+    text-align: left;
+
+}
+
+.unstyled-list {
+    list-style: none;
+    color: white;
+
+}
+
+strong {
+    color: greenyellow;
+}
+
+.footer-logo {
+    width: 100px;
+    margin: 5px;
+}
